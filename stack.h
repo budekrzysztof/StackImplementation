@@ -2,8 +2,8 @@
 
 class Stack {
 
-	int _top;
-	int _tab[8] = { 0 };
+	int top_;
+	int tab_[8] = { 0 };
 
 public:
 
@@ -11,13 +11,13 @@ public:
 	Stack(int);
 	~Stack();
 
-	bool isEmpty();
-	bool isFull();
+	bool is_empty();
+	bool is_full();
 
-	void pushTop(int);
-	void displayAllElements();
+	void push_top(int);
+	void display_all_elements();
 
-	int popTop();
+	int pop_top();
 	int count();
 	int find(int);
 
