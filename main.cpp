@@ -2,11 +2,8 @@
 #include "stack.h"
 
 int main(int argc, char* argv[]) {
-
 	Stack object;
-	
 	Stack* ptr;
-
 	ptr = &object;
 
 	ptr->pushTop(69);
