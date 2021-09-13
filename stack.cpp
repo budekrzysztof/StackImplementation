@@ -25,7 +25,7 @@ bool Stack::is_full() {
 
 void Stack::push_top(int value) {
 	if (is_full())
-		std::cout << "stack full\n";
+		std::cout << "stack overflow\n";
 	else {
 		top_++;
 		tab_[top_] = value;
@@ -34,7 +34,7 @@ void Stack::push_top(int value) {
 
 int Stack::pop_top(){
 	if (is_empty()) {
-		std::cout << "stack already empty\n";
+		std::cout << "stack underflow\n";
 		return 0;
 	}
 	else {
