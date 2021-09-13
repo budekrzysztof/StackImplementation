@@ -6,30 +6,16 @@ int main(int argc, char* argv[]) {
 	Stack* ptr;
 	ptr = &object;
 
-	ptr->pushTop(69);
-	ptr->pushTop(200);
-	ptr->pushTop(956);
-	ptr->pushTop(520);
-	ptr->pushTop(16);
-	ptr->pushTop(620);
-	ptr->pushTop(296);
+	ptr->push_top(200);
+	ptr->push_top(956);
+	ptr->push_top(520);
+	ptr->push_top(16);
+	ptr->push_top(620);
+	ptr->push_top(296);
 
-	ptr->displayAllElements();
+	ptr->display_all_elements();
 	std::cout << ptr->count() << "\n";
 	std::cout << "at 5 level: " << ptr->find(5) << "\n";
 
-
-
-
-	
-	
-	
-
-	
-
-
-
-
-
-
+	return 0;
 }
